@@ -1,0 +1,61 @@
+.arc-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .arc-svg {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    cursor: pointer;
+  }
+  
+  .arc-path {
+    stroke-linecap: round;
+  }
+  
+  .point-group {
+    cursor: pointer;
+  }
+  
+  .point-circle {
+    fill: #6c5ce7;
+  }
+  
+  .arc-label {
+    font-size: 3px;
+    fill: #2d3436;
+    text-anchor: middle;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    pointer-events: none;
+  }
+  
+  .moving-point {
+    fill: #e74c3c;
+    filter: drop-shadow(0 0 2px rgba(231, 76, 60, 0.7));
+  }
+  
+  @media (max-width: 600px) {
+    .arc-container {
+      height: 40vh;
+    }
+  
+    .arc-label {
+      font-size: 2.5px;
+    }
+  
+    .point-circle {
+      r: 1.5;
+    }
+  
+    .moving-point {
+      r: 2;
+    }
+  }
